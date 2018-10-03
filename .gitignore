@@ -1,0 +1,12 @@
+syntax: glob
+*.class
+*.lst
+*.log
+*.bak
+*~
+*.iml
+syntax: regexp
+tmp/
+**/target/
+bin/
+.idea/
