@@ -11,9 +11,8 @@ public class ContactHandler {
         return contacts;
     }
 
-    public String addContact(String name, int age) {
+    public void addContact(String name, int age) {
         contacts.add(new Contact(name, age));
-        return "Contact added Successfully";
     }
 
 }
