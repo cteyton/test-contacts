@@ -15,4 +15,8 @@ public class ContactHandler {
         contacts.add(new Contact(name, age));
     }
 
+    public boolean removeContact(String name) {
+        return contacts.removeIf(c -> c.getName().equals(name));
+    }
+
 }

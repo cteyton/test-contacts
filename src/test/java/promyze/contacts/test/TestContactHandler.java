@@ -16,4 +16,17 @@ public class TestContactHandler {
         assertEquals(1, handler.getContacts().size());
     }
 
+    @Test
+    public void testHandlerRemoveContact() {
+        ContactHandler handler = new ContactHandler();
+        handler.addContact("Marie", 30);
+
+        assertEquals(1, handler.getContacts().size());
+
+        handler.removeContact("Marie");
+
+        assertEquals(0, handler.getContacts().size());
+
+    }
+
 }
